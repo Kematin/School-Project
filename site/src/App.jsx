@@ -3,6 +3,8 @@ import "./styles/main.css";
 
 // Pages
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Contacts from "./pages/Contacts";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -13,6 +15,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
+      <Projects />
+      <Contacts />
       <Footer />
     </div>
   );

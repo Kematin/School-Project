@@ -1,6 +1,9 @@
 // Styles
 import styles from "./Header.module.css";
 
+// UI
+import ButtonHref from "../UI/ButtonHref/ButtonHref";
+
 function Header() {
   return (
     <header className={styles.header}>
@@ -14,9 +17,7 @@ function Header() {
         <div className={styles.header__text}>
           <p>with passion for learning and creating.</p>
         </div>
-        <a href="#!" className="btn">
-          Download CV
-        </a>
+        <ButtonHref text="Download CVS" href="!#" />
       </div>
     </header>
   );
