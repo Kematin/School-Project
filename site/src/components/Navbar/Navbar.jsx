@@ -11,7 +11,7 @@ function Navbar() {
       <div className="container">
         <div className={styles.nav_row}>
           <a href="./index.html" className={styles.logo}>
-            <strong>Freelancer</strong> portfolio
+            <strong>Microcontoller</strong> project
           </a>
           <button className="dark-mode-btn">
             <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
