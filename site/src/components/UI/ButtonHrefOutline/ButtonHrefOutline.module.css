@@ -1,7 +1,7 @@
 
 /* Btn outline */
 
-.btn-outline {
+.btn_outline {
 	display: flex;
 	column-gap: 10px;
 	align-items: center;
@@ -17,11 +17,11 @@
 	transition: opacity 0.2s ease-in;
 }
 
-.btn-outline:hover {
+.btn_outline:hover {
 	opacity: 0.8;
 }
 
-.btn-outline:active {
+.btn_outline:active {
 	position: relative;
 	top: 1px;
 }

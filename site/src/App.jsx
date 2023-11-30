@@ -10,6 +10,8 @@ import Contacts from "./pages/Contacts";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
+import ProjectCard from "./pages/ProjectCard";
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
       <Home />
       <Projects />
       <Contacts />
+      <ProjectCard />
       <Footer />
     </div>
   );
