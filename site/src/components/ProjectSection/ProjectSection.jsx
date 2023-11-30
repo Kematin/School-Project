@@ -1,9 +1,11 @@
-// imgs
-import project_1 from "../../img/projects/01.jpg";
-import project_2 from "../../img/projects/02.jpg";
+// js data
+import projects from "../../helpers/projectsList";
 
 // styles
 import styles from "./ProjectSection.module.css";
+
+// Components
+import Project from "../Project/Project";
 
 function ProjectSection() {
   return (
@@ -11,26 +13,15 @@ function ProjectSection() {
       <div className="container">
         <h2 className="title-1">Projects</h2>
         <ul className={styles.projects}>
-          <li className={styles.project}>
-            <a href="./project-page.html">
-              <img
-                src={project_1}
-                alt="Project img"
-                className={styles.project__img}
+          {projects.map((project) => {
+            return (
+              <Project
+                key={project.id}
+                title={project.title}
+                imageUrl={project.img}
               />
-              <h3 className={styles.project__title}>Gaming streaming portal</h3>
-            </a>
-          </li>
-          <li className={styles.project}>
-            <a href="./project-page.html">
-              <img
-                src={project_2}
-                alt="Project img"
-                className={styles.project__img}
-              />
-              <h3 className={styles.project__title}>Video service</h3>
-            </a>
-          </li>
+            );
+          })}
         </ul>
       </div>
     </main>
