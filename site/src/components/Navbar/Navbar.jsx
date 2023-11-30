@@ -1,3 +1,6 @@
+// libs
+import { NavLink } from "react-router-dom";
+
 // Icons
 import sun from "./../../img/icons/sun.svg";
 import moon from "./../../img/icons/moon.svg";
@@ -5,41 +8,24 @@ import moon from "./../../img/icons/moon.svg";
 // Styles
 import styles from "./Navbar.module.css";
 
+// Components
+import NavList from "../NavList/NavList";
+
 function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className="container">
         <div className={styles.nav_row}>
-          <a href="./index.html" className={styles.logo}>
+          <NavLink to="/" className={styles.logo}>
             <strong>Microcontoller</strong> project
-          </a>
+          </NavLink>
+
           <button className="dark-mode-btn">
             <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
             <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
           </button>
 
-          <ul className={styles.nav_list}>
-            <li className="nav_list__item">
-              <a
-                href="./index.html"
-                className={
-                  (styles.nav_list__link, styles.nav_list__link__active)
-                }
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav_list__item">
-              <a href="./projects.html" className={styles.nav_list__link}>
-                Projects
-              </a>
-            </li>
-            <li className="nav_list__item">
-              <a href="./contacts.html" className={styles.nav_list__link}>
-                Contacts
-              </a>
-            </li>
-          </ul>
+          <NavList />
         </div>
       </div>
     </nav>

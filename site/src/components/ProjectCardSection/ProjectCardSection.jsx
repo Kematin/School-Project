@@ -3,6 +3,7 @@ import styles from "./ProjectCardSection.module.css";
 
 // img
 import gitHubIcon from "./../../img/icons/gitHub-black.svg";
+import img from "./../../img/projects/02-big.jpg";
 
 // UI
 import ButtonHrefOutline from "../UI/ButtonHrefOutline/ButtonHrefOutline";
@@ -13,11 +14,7 @@ function ProjectCardSection() {
       <div className="container">
         <div className={styles.project_details}>
           <h1 className="title-1">Video service</h1>
-          <img
-            src="./img/projects/02-big.jpg"
-            alt=""
-            className={styles.project_details__cover}
-          />
+          <img src={img} alt="" className={styles.project_details__cover} />
           <div className={styles.project_details__desc}>
             <p>Skills: React, Node.js, MongoDB</p>
           </div>
