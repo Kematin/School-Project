@@ -11,6 +11,7 @@ import "./styles/main.css";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
+import ProjectCard from "./pages/ProjectCard";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectCard />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
         <Footer />

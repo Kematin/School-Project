@@ -1,28 +1,49 @@
+// libs
+import PropTypes from "prop-types";
+
 // styles
 import styles from "./ProjectCardSection.module.css";
 
 // img
 import gitHubIcon from "./../../img/icons/gitHub-black.svg";
-import img from "./../../img/projects/02-big.jpg";
 
 // UI
 import ButtonHrefOutline from "../UI/ButtonHrefOutline/ButtonHrefOutline";
 
-function ProjectCardSection() {
+function ProjectCardSection({ projectDetails }) {
   return (
     <main className="section">
       <div className="container">
         <div className={styles.project_details}>
-          <h1 className="title-1">Video service</h1>
-          <img src={img} alt="" className={styles.project_details__cover} />
+          <h1 className="title-1">{projectDetails.title}</h1>
+          <img
+            src={projectDetails.imgBig}
+            alt=""
+            className={styles.project_details__cover}
+          />
           <div className={styles.project_details__desc}>
-            <p>Skills: React, Node.js, MongoDB</p>
+            <p>Skills: {projectDetails.skills}</p>
           </div>
-          <ButtonHrefOutline text="Github repo" href="!#" icon={gitHubIcon} />
+          {projectDetails.gitHubLink && (
+            <ButtonHrefOutline
+              text="Github repo"
+              href={projectDetails.gitHubLink}
+              icon={gitHubIcon}
+            />
+          )}
         </div>
       </div>
     </main>
   );
 }
+
+ProjectCardSection.propTypes = {
+  projectDetails: PropTypes.shape({
+    title: PropTypes.string,
+    imgBig: PropTypes.string,
+    skills: PropTypes.string,
+    gitHubLink: PropTypes.oneOfType([PropTypes.string, PropTypes.any]),
+  }),
+};
 
 export default ProjectCardSection;
