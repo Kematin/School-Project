@@ -17,6 +17,7 @@ function ProjectSection() {
             return (
               <Project
                 key={project.id}
+                id={project.id}
                 title={project.title}
                 imageUrl={project.img}
               />
