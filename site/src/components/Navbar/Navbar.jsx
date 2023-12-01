@@ -1,14 +1,14 @@
 // libs
 import { NavLink } from "react-router-dom";
 
-// Styles
-import styles from "./Navbar.module.css";
-
 // Components
 import NavList from "../NavList/NavList";
 
 // UI
 import ButtonDarkMode from "../UI/ButtonDarkMode/ButtonDarkMode";
+
+// Styles
+import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (

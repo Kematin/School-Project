@@ -1,4 +1,3 @@
-
 .dark_mode_btn {
 	order: 9;
 
@@ -28,14 +27,12 @@
 	border-radius: 50%;
 	background-color: #fff;
 
-	transition: left 0.2s ease-in;
+	transition: left 0.18s ease-in;
 }
 
 .dark_mode_btn__active::before {
 	left: 26px;
 }
-
-
 
 .dark_mode_btn__icon {
 	position: relative;
