@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import ProjectCard from "./pages/ProjectCard";
+import ProjectBank from "./pages/ProjectBank";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/1" element={<ProjectBank />} />
           <Route path="/project/:id" element={<ProjectCard />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>

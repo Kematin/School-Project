@@ -16,7 +16,7 @@ function Navbar() {
       <div className="container">
         <div className={styles.nav_row}>
           <NavLink to="/" className={styles.logo}>
-            <strong>Microcontoller</strong> project
+            <strong>Микроконтоллеры</strong>
           </NavLink>
 
           <ButtonDarkMode />

@@ -7,9 +7,9 @@ import NavItem from "../NavItem/NavItem";
 function NavList() {
   return (
     <ul className={styles.nav_list}>
-      <NavItem link="/" name="Home" />
-      <NavItem link="/projects" name="Projects" />
-      <NavItem link="/contacts" name="Contacts" />
+      <NavItem link="/" name="Основная страница" />
+      <NavItem link="/projects" name="Проекты" />
+      <NavItem link="/contacts" name="Обучение" />
     </ul>
   );
 }
