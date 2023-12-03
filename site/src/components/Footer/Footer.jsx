@@ -12,18 +12,18 @@ function Footer() {
         <div className={styles.footer__wrapper}>
           <ul className={styles.social}>
             <li className="social__item">
-              <a href="#!">
+              <a href="https://vk.com/kematin">
                 <img src={vk} alt="Link" />
               </a>
             </li>
             <li className="social__item">
-              <a href="#!">
+              <a href="https://github.com/Kematin">
                 <img src={github} alt="Link" />
               </a>
             </li>
           </ul>
           <div className={styles.copyright}>
-            <p>© 2022 frontend-dev.com</p>
+            <p>© 2023 kematin.space</p>
           </div>
         </div>
       </div>

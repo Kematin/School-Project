@@ -2,7 +2,7 @@
 import styles from "./ProjectBankSection.module.css";
 
 // imgs
-import img from "./../../img/projects/03-big.jpg";
+import img from "./../../img/projects/01.jpg";
 import gitHubIcon from "./../../img/icons/gitHub-black.svg";
 
 // components

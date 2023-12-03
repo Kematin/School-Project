@@ -3,7 +3,7 @@ import projects from "../../helpers/projectsList";
 
 // styles, imgs
 import styles from "./ProjectSection.module.css";
-import img from "../../img/projects/03-big.jpg";
+import img from "../../img/projects/01.jpg";
 
 // Components
 import Project from "../Project/Project";

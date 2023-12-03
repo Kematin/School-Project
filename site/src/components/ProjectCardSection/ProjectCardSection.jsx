@@ -17,7 +17,7 @@ function ProjectCardSection({ projectDetails }) {
         <div className={styles.project_details}>
           <h1 className="title-1">{projectDetails.title}</h1>
           <img
-            src={projectDetails.imgBig}
+            src={projectDetails.img}
             alt=""
             className={styles.project_details__cover}
           />
@@ -40,7 +40,7 @@ function ProjectCardSection({ projectDetails }) {
 ProjectCardSection.propTypes = {
   projectDetails: PropTypes.shape({
     title: PropTypes.string,
-    imgBig: PropTypes.string,
+    img: PropTypes.string,
     skills: PropTypes.string,
     gitHubLink: PropTypes.oneOfType([PropTypes.string, PropTypes.any]),
   }),
