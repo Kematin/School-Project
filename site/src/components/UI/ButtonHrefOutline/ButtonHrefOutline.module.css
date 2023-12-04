@@ -6,7 +6,7 @@
 	column-gap: 10px;
 	align-items: center;
 
-	height: 48px;
+	height: 42px;
 	padding: 12px 20px;
 
 	border-radius: 5px;
@@ -15,7 +15,7 @@
 	color: var(--button-text-color);
 
 	transition: opacity 0.2s ease-in;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: bold;
 }
 

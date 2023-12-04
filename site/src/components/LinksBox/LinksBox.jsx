@@ -14,12 +14,13 @@ import ButtonHrefOutline from "../UI/ButtonHrefOutline/ButtonHrefOutline";
 
 function LinksBox({ links }) {
   return (
-    <div className="links_box">
-      <div className="section">
+    <>
+      <h3 className="title-3">Ссылки</h3>
+      <div className={style.links_box}>
         <div className={style.link}>
           {links.gitHubLink && (
             <ButtonHrefOutline
-              text="Репозиторий GitHub"
+              text="GitHub"
               href={links.gitHubLink}
               icon={gitHubIcon}
             />
@@ -28,7 +29,7 @@ function LinksBox({ links }) {
         <div className={style.link}>
           {links.projectLink && (
             <ButtonHrefOutline
-              text="Сайт проекта"
+              text="Project"
               href={links.projectLink}
               icon={projectIcon}
             />
@@ -37,14 +38,14 @@ function LinksBox({ links }) {
         <div className={style.link}>
           {links.youtubeLink && (
             <ButtonHrefOutline
-              text="Видео YouTube"
+              text="YouTube"
               href={links.youtubeLink}
               icon={youTubeIcon}
             />
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -18,7 +18,23 @@ function ProjectCardSection({ projectDetails }) {
             alt=""
             className={styles.project_details__cover}
           />
-          <LinksBox links={projectDetails.links} />
+          <div className="container">
+            <h2 className="title-2">Описание</h2>
+            <div className={styles.description}>
+              <p>{projectDetails.description}</p>
+            </div>
+          </div>
+          <div className="container">
+            <div className="title-2">Компоненты</div>
+            <ul className={styles.components_list}>
+              {projectDetails.components.map((component, index) => {
+                return <li key={index}>{component}</li>;
+              })}
+            </ul>
+          </div>
+          <div className="contanier">
+            <LinksBox links={projectDetails.links} />
+          </div>
         </div>
       </div>
     </main>
