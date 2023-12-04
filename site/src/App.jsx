@@ -10,7 +10,7 @@ import "./styles/main.css";
 // Pages
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Contacts from "./pages/Contacts";
+import Learning from "./pages/Learning";
 import ProjectCard from "./pages/ProjectCard";
 import ProjectBank from "./pages/ProjectBank";
 import Undefined from "./pages/Undefined";
@@ -30,7 +30,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/1" element={<ProjectBank />} />
           <Route path="/project/:id" element={<ProjectCard />} />
-          <Route path="/learning" element={<Contacts />} />
+          <Route path="/learning" element={<Learning />} />
           <Route path="*" element={<Undefined />} />
         </Routes>
         <Footer />

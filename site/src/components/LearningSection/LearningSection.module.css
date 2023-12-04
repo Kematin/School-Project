@@ -1,0 +1,71 @@
+.content_list {
+	margin: 0 auto;
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	row-gap: 40px;
+	text-align: left;
+  line-height: 1.33;
+}
+
+.content_item p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content_item h2 {
+  border-bottom: 1.8px solid var(--text-color); /* Линия будет толщиной 1 пиксель и серого цвета */
+}
+
+.content_item p em {
+  font-style: normal;
+	color: var(--accent);
+}
+
+.content_item p a {
+  font-style: normal;
+	color: var(--button-text-color);
+	text-decoration: underline;
+}
+
+.img_cover {
+	max-width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	box-shadow: var(--box-shadow);
+	border-radius: 10px;
+}
+
+.common_list {
+	margin-top: 15px;
+	list-style-type: circle;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.common_list li {
+	margin-bottom: 10px;
+}
+
+.common_list li em {
+	font-size: 25px;
+  font-style: normal;
+	color: var(--accent);
+}
+
+/* Общие стили */
+.common_list li a {
+  font-size: 20px;
+  max-width: 60%;
+}
+
+/* Стили для экранов с шириной менее 600px */
+@media screen and (max-width: 700px) {
+  .common_list li a {
+    min-height: 12vh;
+  }
+}
+
+
