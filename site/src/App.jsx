@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import ProjectCard from "./pages/ProjectCard";
 import ProjectBank from "./pages/ProjectBank";
+import Undefined from "./pages/Undefined";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/project/1" element={<ProjectBank />} />
           <Route path="/project/:id" element={<ProjectCard />} />
           <Route path="/learning" element={<Contacts />} />
+          <Route path="*" element={<Undefined />} />
         </Routes>
         <Footer />
       </Router>
