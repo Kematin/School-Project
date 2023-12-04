@@ -1,6 +1,6 @@
 // Icons
 import vk from "./../../img/icons/vk.svg";
-import github from "./../../img/icons/github.svg";
+import github from "./../../img/icons/gitHub.svg";
 
 // Styles
 import styles from "./Footer.module.css";
