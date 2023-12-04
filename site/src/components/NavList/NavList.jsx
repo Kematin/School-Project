@@ -9,7 +9,7 @@ function NavList() {
     <ul className={styles.nav_list}>
       <NavItem link="/" name="Основная страница" />
       <NavItem link="/projects" name="Проекты" />
-      <NavItem link="/contacts" name="Обучение" />
+      <NavItem link="/learning" name="Обучение" />
     </ul>
   );
 }
