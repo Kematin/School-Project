@@ -10,11 +10,13 @@
 	padding: 12px 20px;
 
 	border-radius: 5px;
-	border: 1px solid #000;
-	background-color: #fff;
-	color: #000;
+	border: 1px solid var(--button-text-color);
+	background-color: var(--button-color);
+	color: var(--button-text-color);
 
 	transition: opacity 0.2s ease-in;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .btn_outline:hover {

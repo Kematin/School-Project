@@ -4,11 +4,8 @@ import PropTypes from "prop-types";
 // styles
 import styles from "./ProjectCardSection.module.css";
 
-// img
-import gitHubIcon from "./../../img/icons/gitHub-black.svg";
-
-// UI
-import ButtonHrefOutline from "../UI/ButtonHrefOutline/ButtonHrefOutline";
+// components
+import LinksBox from "../LinksBox/LinksBox";
 
 function ProjectCardSection({ projectDetails }) {
   return (
@@ -21,16 +18,7 @@ function ProjectCardSection({ projectDetails }) {
             alt=""
             className={styles.project_details__cover}
           />
-          <div className={styles.project_details__desc}>
-            <p>Skills: {projectDetails.skills}</p>
-          </div>
-          {projectDetails.gitHubLink && (
-            <ButtonHrefOutline
-              text="Github repo"
-              href={projectDetails.gitHubLink}
-              icon={gitHubIcon}
-            />
-          )}
+          <LinksBox links={projectDetails.links} />
         </div>
       </div>
     </main>
@@ -41,8 +29,13 @@ ProjectCardSection.propTypes = {
   projectDetails: PropTypes.shape({
     title: PropTypes.string,
     img: PropTypes.string,
-    skills: PropTypes.string,
-    gitHubLink: PropTypes.oneOfType([PropTypes.string, PropTypes.any]),
+    description: PropTypes.string,
+    components: PropTypes.array,
+    links: PropTypes.shape({
+      gitHubLink: PropTypes.oneOfType([PropTypes.string, PropTypes.any]),
+      projectLink: PropTypes.oneOfType([PropTypes.string, PropTypes.any]),
+      youtubeLink: PropTypes.oneOfType([PropTypes.string, PropTypes.any]),
+    }),
   }),
 };
 

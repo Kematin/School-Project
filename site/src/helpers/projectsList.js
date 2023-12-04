@@ -13,19 +13,25 @@ const projects = [
     id: 2,
     title: "Gaming streaming portal",
     description: "React, Node.JS, MongoDB",
-    components: "",
-    gitHubLink: "https://github.com/Kematin/School-Project",
-    projectLink: "https://github.com/Kematin/School-Project",
+    components: [],
     img: project2,
+    links: {
+      gitHubLink: "https://github.com/Kematin/School-Project",
+      projectLink: "https://github.com/Kematin/School-Project",
+      youtubeLink: "https://github.com/Kematin/School-Project",
+    },
   },
   {
     id: 3,
     title: "Gaming streaming portal",
     description: "React, Node.JS, MongoDB",
-    components: "",
-    gitHubLink: "https://github.com/Kematin/School-Project",
-    projectLink: "https://github.com/Kematin/School-Project",
+    components: [],
     img: project3,
+    links: {
+      gitHubLink: "https://github.com/Kematin/School-Project",
+      projectLink: "https://github.com/Kematin/School-Project",
+      youtubeLink: "https://github.com/Kematin/School-Project",
+    },
   },
 ];
 
