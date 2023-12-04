@@ -8,6 +8,9 @@ import img from "../../img/projects/01.jpg";
 // Components
 import Project from "../Project/Project";
 
+// UI
+import ButtonHref from "../UI/ButtonHref/ButtonHref";
+
 function ProjectSection() {
   return (
     <main className="section">
@@ -33,6 +36,15 @@ function ProjectSection() {
             );
           })}
         </ul>
+        <div className={styles.link_to_site}>
+          <h1 className="title-1">
+            Полный список возможных проектов от AlexGyver
+          </h1>
+          <ButtonHref
+            text="Перейти на сайт"
+            href="https://alexgyver.ru/ardu-proj/page/1/"
+          />
+        </div>
       </div>
     </main>
   );

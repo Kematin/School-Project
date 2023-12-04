@@ -6,6 +6,12 @@
 	flex-wrap: wrap;
 	column-gap: 30px;
 	row-gap: 30px;
+	margin-bottom: 50px;
 }
 
 
+.link_to_site {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
