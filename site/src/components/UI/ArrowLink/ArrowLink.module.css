@@ -1,0 +1,19 @@
+.arrow_link {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px; /* Регулируйте величину отступа справа по вашему вкусу */
+  color: var(--accent); /* Цвет текста ссылки */
+  text-decoration: none;
+}
+
+.arrow_link::after {
+  content: '\2192'; /* Код стрелочки в Юникоде (в данном случае — стрелочка вправо) */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px; /* Размер стрелочки */
+  color: var(--accent); /* Цвет стрелочки, соответствующий цвету текста ссылки */
+}
+
+
