@@ -55,6 +55,8 @@
 .common_list li a {
   font-size: 20px;
   max-width: 60%;
+	min-height: 10vh;
+	min-width: 100%;
 }
 
 /* Стили для экранов с шириной менее 600px */
