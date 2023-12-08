@@ -26,6 +26,6 @@
 }
 
 .logo strong {
-	font-weight: 800;
+	font-weight: var(--font-weight);
 }
 

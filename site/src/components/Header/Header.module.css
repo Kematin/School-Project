@@ -24,13 +24,13 @@
 .header__title {
 	margin-bottom: 20px;
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: var(--font-weight);
 	line-height: 1.4;
 }
 
 .header__title strong {
 	font-size: 60px;
-	font-weight: 700;
+	font-weight: var(--font-weight);
 }
 
 .header__title em {

@@ -16,7 +16,7 @@
 
 	transition: opacity 0.2s ease-in;
 	font-size: 17px;
-	font-weight: bold;
+	font-weight: var(--font-weight);
 }
 
 .btn_outline:hover {

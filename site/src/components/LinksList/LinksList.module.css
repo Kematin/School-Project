@@ -1,7 +1,7 @@
 .common_list {
 	margin-top: 15px;
 	list-style-type: circle;
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 18px;
 }
 
@@ -19,11 +19,4 @@
 .common_list li a {
   font-size: 20px;
   max-width: 60%;
-}
-
-/* Стили для экранов с шириной менее 600px */
-@media screen and (max-width: 700px) {
-  .common_list li a {
-    min-height: 12vh;
-  }
 }

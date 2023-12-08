@@ -11,12 +11,12 @@
 
 .content_item::marker {
   font-size: 40px;
-	font-weight: bold;
+	font-weight: var(--font-weight);
 	color: var(--accent)
 }
 
 .content_item p {
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 18px;
 }
 
