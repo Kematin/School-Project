@@ -2,7 +2,7 @@
 	margin-top: 15px;
 	list-style-type: circle;
   font-weight: var(--font-weight);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .common_list li {
@@ -17,6 +17,6 @@
 
 /* Общие стили */
 .common_list li a {
-  font-size: 20px;
+  font-size: 23px;
   max-width: 60%;
 }

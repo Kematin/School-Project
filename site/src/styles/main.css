@@ -1,5 +1,5 @@
 @import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 :root {
 	/* Colors */
@@ -10,8 +10,8 @@
 	--purple: #3E65D1;
 
 	/* font */
-	--font: 'Montserrat Alternates', sans-serif;
-	--font-weight: bold;
+	--font: 'Merriweather', serif;; 
+	--font-weight: normal;
 
 	/* Nav */
 	--nav-bg: var(--black);

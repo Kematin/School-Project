@@ -11,7 +11,7 @@
 
 .content_item p {
   font-weight: var(--font-weight);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .content_item p em {
@@ -38,7 +38,7 @@
 	margin-top: 15px;
 	list-style-type: circle;
   font-weight: var(--font-weight);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .common_list li {
@@ -46,7 +46,7 @@
 }
 
 .common_list li em {
-	font-size: 25px;
+	font-size: 27px;
   font-style: normal;
 	color: var(--accent);
 }
