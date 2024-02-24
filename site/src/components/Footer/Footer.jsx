@@ -23,7 +23,7 @@ function Footer() {
             </li>
           </ul>
           <div className={styles.copyright}>
-            <p>© 2023 kematin.space</p>
+            <p>© 2024 kematin.space</p>
           </div>
         </div>
       </div>
